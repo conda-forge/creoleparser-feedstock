@@ -11,6 +11,18 @@ Summary: a Python library for converting Creole wiki markup (aka wikicreole) for
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/creoleparser-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/creoleparser-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/creoleparser-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/creoleparser-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/creoleparser-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/creoleparser-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/creoleparser/badges/version.svg)](https://anaconda.org/conda-forge/creoleparser)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/creoleparser/badges/downloads.svg)](https://anaconda.org/conda-forge/creoleparser)
+
 Installing creoleparser
 =======================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `creoleparser` available on your p
 ```
 conda search creoleparser --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/creoleparser-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/creoleparser-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/creoleparser-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/creoleparser-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/creoleparser-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/creoleparser-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/creoleparser/badges/version.svg)](https://anaconda.org/conda-forge/creoleparser)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/creoleparser/badges/downloads.svg)](https://anaconda.org/conda-forge/creoleparser)
 
 
 Updating creoleparser-feedstock
