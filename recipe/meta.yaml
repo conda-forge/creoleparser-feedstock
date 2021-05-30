@@ -10,15 +10,15 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   build:
-    - python <3
+    - python >=3.6
     - pip 
   run:
-    - python <3
+    - python >=3.6
     - genshi >=0.4
 
 test:
@@ -39,3 +39,4 @@ about:
 extra:
   recipe-maintainers:
     - pmlandwehr
+    - jan-janssen
