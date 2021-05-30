@@ -12,10 +12,10 @@ source:
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
-  build:
+  host:
     - python >=3.6
     - pip 
   run:
@@ -28,6 +28,10 @@ test:
     - creoleparser.core
     - creoleparser.dialects
     - creoleparser.elements
+  commands:
+    - pip check
+  requires: 
+    - pip
 
 about:
   home: https://github.com/garrison/creoleparser
