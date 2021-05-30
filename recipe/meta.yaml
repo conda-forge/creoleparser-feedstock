@@ -1,11 +1,12 @@
+{% set name = "creoleparser" %}
 {% set version = "0.7.5" %}
 
 package:
-  name: creoleparser
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/C/Creoleparser/Creoleparser-{{ version }}.zip
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/Creoleparser-{{ version }}.tar.gz
   sha256: 62999c115f3ece801ff31cdde7cab8f41df4ed95c189e1c6f02e7a036733a641
 
 build:
