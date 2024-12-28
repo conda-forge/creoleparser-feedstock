@@ -6,20 +6,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/Creoleparser-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/Creoleparser-{{ version }}.tar.gz
   sha256: 62999c115f3ece801ff31cdde7cab8f41df4ed95c189e1c6f02e7a036733a641
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip 
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - genshi >=0.4
 
 test:
@@ -32,6 +32,7 @@ test:
     - pip check
   requires: 
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/garrison/creoleparser
