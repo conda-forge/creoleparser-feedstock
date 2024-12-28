@@ -17,7 +17,8 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - pip 
+    - pip
+    - setuptools
   run:
     - python >={{ python_min }}
     - genshi >=0.4
